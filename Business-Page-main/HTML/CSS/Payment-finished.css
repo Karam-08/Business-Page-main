@@ -1,0 +1,28 @@
+/* Made by Andy */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height: 100vh; /* Adjustment stuff */
+    background-image: linear-gradient(to right, rgba(235, 191, 170, 0.692), rgba(218, 154, 60, 0.795)); /* Background has color gradient */
+    transition: background-color ease;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size:x-large;
+}
+.box{
+    width:600px;
+    height: 450px;            
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px white solid;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+}

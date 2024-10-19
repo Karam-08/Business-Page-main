@@ -1,6 +1,12 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Adjusts the h1 to the center */
+    grid-template-columns: auto;
+}
+
 .links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* Spaces out the links evenly */
 }
 body{
     background-color: #FFC80D;
@@ -8,13 +14,21 @@ body{
     background-attachment: fixed;
     background-size: cover;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Cool SVG and font */
 }
+
 a{
     text-decoration: none;
-    color: blue;
+    color: blue; /* Make it stand out more */
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline; /* Make it stand out more */
 }
 
 h1{
     text-align: center;
+    font-size: xxx-large;
 }
 

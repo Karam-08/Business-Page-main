@@ -1,49 +1,57 @@
+<!-- Made by Karam -->
 <!DOCTYPE html>
 <html lang ="en">
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title>Payment Form Example</title>
+        <title>Repair Payment Form</title>
+        <link rel="stylesheet" href="../CSS/Shop-page.css">
+        <link rel="icon" href="../Images/favicon-16x16.png">
+        <link rel="icon" href="../Images/favicon-32x32.png">
     </head>
     <body>
         <form action="#">
             <h1>Payment Form</h1>
-                <p>Required Fields are Followed by <strong><abbr title='required'>*</abbr></strong></p>
+                <p>Required Fields are Followed by <strong><abbr title='required'>*</abbr></strong></p> <!--Asterisk means you need to fill out the form-->
         </form>
         <section>
             <h2>Contact Information</h2>
                 <fieldset>
-                    <label for="Car Selection">
-                    <span>Car Selection:</span>
+                    <label for="Repair Selection">
+                    <span>Repair Selection:</span>
                     <strong><abbr title="Required">*</abbr></strong>
-                        <select name="selection" id="Cars">
-                            <option value="Oil Change">Oil Change: $85.00</option>
-                            <option value="Tire Change">Tire Change (All 4 tires are changed) $120.00</option>
-                            <option value="Radiator Change">Radiator Change: $850.00</option>
-                        </select>
+                    <br>
+                    <input type="checkbox" id="repair1" name="repair1" value="Oil"> 
+                        <label for="repair1">Oil Change: $85.00</label><br> <!--Specifies what the checkbox is for. <br> for spacing. -->
+                        <input type="checkbox" id="repair2" name="repair2" value="Tire"> 
+                        <label for="repair2">Tire Change (All 4 tires are changed): $120.00 </label><br>
+                        <input type="checkbox" id="repair3" name="repair3" value="Radiator">
+                        <label for="repair3">Radiator Replacement: $850.00</label><br>
+                        <input type="checkbox" id="repair4" name="repair4" value="Battery">
+                        <label for="repair4">Car Battery Replacement: $150.00</label><br>
                     </label>
                 </fieldset>
 
                 <p>
-                    <label for="name">
-                    <span>Name:</span>
+                    <label for="name"> <!-- Name is required for transaction-->
+                    <span>Name:</span> <!--Shows text put in between span next to the textbox-->
                     <strong><abbr title="Required">*</abbr></strong>
                 </label>
-                <input type="text" id="name" name="username">
+                <input type="text" id="name" name="username"> <!--Puts in an area where you can type-->
             </p>
             <p>
-                <label for="mail">
+                <label for="mail"> 
                     <span>Email:</span>
                         <strong><abbr title="Required">*</abbr></strong>
                 </label>
-                <input type="passsword" id="password" name="Password">
+                <input type="text" id="email" name="email">
                 </p>
                 <p>
                     <label for="password">
                         <span>Password:</span>
                             <strong><abbr title="Required">*</abbr></strong>
                     </label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password"> <!--Covers up what is typed in-->
                 </p>
         </section>
         <section>
@@ -52,8 +60,8 @@
                 <label for="card">
                     <span>Card Type:</span>
                 </label>
-            <select id="card" name="usercard">
-                <option value="visa">Visa</option>
+            <select id="card" name="usercard"> <!--Provides list dropdown-->
+                <option value="visa">Visa</option> <!--Individual options-->
                 <option value="mc">MasterCard</option>
                 <option value="paypal">Paypal</option>
                 <option value="amex">American Express</option>
@@ -66,16 +74,16 @@
             <span>Card Number</span>
             <strong><abbr title="Required">*</abbr></strong>
         </label>
-        <input type="tel" name="cardnumber" id="number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}[0-9]{4}">
+        <input type="tel" name="cardnumber" id="number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}[0-9]{4}"> <!-- Lets you put in numbers -->
         </p>
 
         <p>
             <label for="date">
             <span>Expiration Date</span>
             <strong><abbr title="Required">*</abbr></strong>
-            <em>Formatted as dd/mm/yy</em>
+            <em>Formatted as dd/mm/yy</em> <!--Transparent text shows up-->
         </label>
-        <input type="date" name="card exp date" id="exp date">
+        <input type="date" name="card exp date" id="exp date"> <!--Specifies that this is a calender and you need to put in a date-->
         </p>
     </section>
     <section>
@@ -89,6 +97,9 @@
             <input type="date" name="arrival date" id="appt date">
         </p>
     </section>
-        
+    <section id="Payment-button">
+        <a href="./Finished Payment.html">Pay Now</a> <!--You would click the button to be done with the payment-->
+    </section>
+    <h3>Contact Information: +1 800-377-0800</h3>
     </body>
 </html>
